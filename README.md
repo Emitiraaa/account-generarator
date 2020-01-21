@@ -24,5 +24,5 @@ In the source code remember to replace "Channel ID" in the if (message.channel.i
 ## Support
 
 To get support use:  
-- Mail: hirtie.silvano@gmail.com
+
 - Discord: Mental#8160
