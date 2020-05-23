@@ -7,12 +7,10 @@ var async = require("async");
 const firstline = require("firstline");
 const generated = new Set();
 var os = require("os");
-
 var express = require('express');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
-
 //For avoidong Heroku $PORT error
 app.get('/', function (request, response) {
     var result = 'App is running'
@@ -20,6 +18,7 @@ app.get('/', function (request, response) {
 }).listen(app.get('port'), function () {
     console.log('App is running, server is listening on port ', app.get('port'));
 });
+
 bot.on("ready", () => {
     console.log(`Logged in as ${bot.user.tag}!`);
 });
@@ -36,12 +35,12 @@ bot.on("message", message => {
         message.channel.send("Test done, bot is working");
         }
 
-        if (command === "gen") {
-            if (generated.has(message.author.id)) {
-                message.channel.send(
-                    "Wait 15 minute before generating another account!. - " +
-                    message.author
-                );
+    if (command === "gen") {
+        if (generated.has(message.author.id)) {
+            message.channel.send(
+            "Wait 15 minute before generating another account!. - " +
+            message.author
+            );
             } else {
                 let messageArray = message.content.split(" ");
                 let args = messageArray.slice(1);
@@ -49,7 +48,6 @@ bot.on("message", message => {
                     return message.reply("Please, specify the service you want!");
                 var fs = require("fs");
                 const filePath = __dirname + "/" + args[0] + ".txt";
-
                 fs.readFile(filePath, function (err, data) {
                     if (!err) {
                         data = data.toString();
@@ -105,11 +103,10 @@ bot.on("message", message => {
         }
         else
             if (command === "stats") {
-
                 message.channel.send(`Total users: ${bot.users.size}`)
             }
 
-        if (command === "add") {
+     if (command === "add") {
             if (!message.member.hasPermission("ADMINISTRATOR"))
                 return message.reply("Sorry, you can't do it, you are not an admin!");
             var fs = require("fs");
@@ -137,7 +134,7 @@ bot.on("message", message => {
                 message.channel.send("Done!")
             });
         }
-        if (command === "restock") {
+       if (command === "restock") {
             let messageArray = message.content.split(" ");
             let args = messageArray.slice(1);
             if (!message.member.hasPermission("ADMINISTRATOR"))
