@@ -29,7 +29,9 @@ After you filled the txt with all the accounts you want, you can use the command
   
 **Note**  
 In the source code remember to replace "Channel ID" in the 
-```js if (message.channel.id === "Channel_ID")```
+```js 
+if (message.channel.id === "Channel_ID")
+```
 with the id of the channel you want the bot to work in.
 
 ## 🐾 Examples
