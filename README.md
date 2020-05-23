@@ -2,7 +2,7 @@
 ## 🚩 Table of Contents
 - [Modules](#-modules)
 - [About](#-about)
-- [How it works](#-HowItworks)
+- [How it works](#-How-It-works)
 - [Examples](#-examples)
 
 
