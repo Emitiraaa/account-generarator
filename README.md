@@ -11,7 +11,7 @@ This tool let your server's users to get accounts through a secure and advanced 
 The accounts are saved in txt files, so you do not have to deal with databases.  
 You can create a service, and generate accounts for that service.  
 
-## ⚙️ works
+## ⚙️ How it works
 **Service creation**   
 You have to create the services you provide account for. (netflix, etc..), use the command `/create`, this will create a txt file
 with the name of the service you choosed, you can also create it manually.  
