@@ -4,21 +4,19 @@
 - [How it works](#-works)
 - [Examples](#-examples)
 
-## V3 Changelog
-V3 is the biggest update this bot ever had.  
-What's changed is EVERYTHING, the code has been completely rewrote.  
-- JSON is used instead of TXT files, this makes everything easier and faster. 
-- Create command has been removed, now you can just write add, and if the service do not exists, the bot will create it for you.  
-- Cooldown and Prefix can be changed thorugh the command "change OPTION VALUE" example: "change prefix /".  
-
-
-
-
 ## ❓ About
 This tool let your server's users to get accounts through a secure and advanced system.  
 The accounts are saved in JSON files.  
 The JSON file's name is the name of the service your users can generate accounts from.  
 For example, if you have some netflix account you want to give, just create a netflix.json file or use the command /add netflix username:password.
+
+## V3 Changelog
+V3 is the biggest update this bot ever had.  
+What's changed is EVERYTHING, the code has been completely rewrote.  
+- JSON is used instead of TXT files, this makes everything easier and faster. 
+- Create command has been removed, now you can just write add, and if the service do not exists, the bot will create it for you.  
+- Cooldown and Prefix can be changed thorugh the command "change OPTION VALUE" example: "change prefix /". 
+- Now you can check how many accounts are in a service.
 
 ## ⚙️ How it works
 **Adding Accounts**  
@@ -37,5 +35,6 @@ with the id of the channel you want the bot to work in.
 
 ## 🐾 Examples
 /add netflix useraname1:password1 - This will add that account to the Netflix service  
-/gen Netflix - This will take the first account in the Netflix.json file and send it to the user   
+/gen netflix - This will take the first account in the Netflix.json file and send it to the user 
+/check Netflix - You will receive a message with the amount of accounts on that service.
 
