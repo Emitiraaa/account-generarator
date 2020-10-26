@@ -4,7 +4,6 @@ const fs = require('fs')
 let settings = JSON.parse(fs.readFileSync(__dirname+"/settings.json"));
 let prefix = settings['prefix'];
 let cooldown = settings['cooldown']
-var glob = require("glob")
 const generated = new Set();
 
 
